@@ -1,0 +1,12 @@
+@import '_nullstyle.scss';
+@import '_header.scss';
+@font-face {
+    font-family: 'Stolzl';
+    src: url('../fonts/stolzl_regular.woff2');
+}
+body {
+    background-color: #210E09;
+}
+a{
+    color: white;
+}
