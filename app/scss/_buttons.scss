@@ -1,8 +1,10 @@
-.button {
+
+.button-transparent{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat;
+    font-weight: 700;
     min-height: 48px;
     padding: 0 34px;
     min-width: 155px;
@@ -12,8 +14,6 @@
     border: 2px solid #fff;
     border-radius: 40px;
     cursor: pointer;
-}
-.button-transparent{
     position: relative;
     display: inline-block;
     color: #fff;
@@ -45,6 +45,20 @@
 }
 
 .button-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    min-height: 48px;
+    padding: 0 34px;
+    min-width: 155px;
+    font-size: 12px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     color: #343045;
