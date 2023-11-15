@@ -18,8 +18,8 @@
     display: inline-block;
     color: #fff;
     overflow: hidden;
-    z-index: 1; /* Подстройте значение z-index по необходимости */
-    transition: 0.3s ease-in-out; /* добавлено свойство перехода */
+    z-index: 1; 
+    transition: 0.2s ease-in-out; 
     border: 2px solid #fff;
     &::after {
         content: "";
@@ -63,8 +63,8 @@
     display: inline-block;
     color: #343045;
     overflow: hidden;
-    z-index: 1; /* Подстройте значение z-index по необходимости */
-    transition: 0.4s ease-in-out; /* добавлено свойство перехода */
+    z-index: 1;
+    transition: 0.3s ease-in-out; 
     border: 2px solid transparent;
     &::after {
         content: "";
@@ -76,7 +76,7 @@
         height: 100%;
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
         z-index: -1;
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 
     &:hover::after {
