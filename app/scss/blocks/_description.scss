@@ -1,0 +1,15 @@
+.description {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        p {
+            max-width: 652px;
+            font-size: 16px;
+        }
+    }
+    &__subtitle {
+        display: flex;
+        gap: 30px;
+    }
+}

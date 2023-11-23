@@ -1,74 +1,74 @@
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 15px 0px;
 }
-.header__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo__rotate {
-    &:hover {
-        animation: rotateAnimation 0.3s linear forwards infinite; 
-    }
+  &:hover {
+    animation: rotateAnimation 0.3s linear forwards infinite;
+  }
 
-    @keyframes rotateAnimation {
-        to {
-            transform: rotate(360deg);
-        }
+  @keyframes rotateAnimation {
+    to {
+      transform: rotate(360deg);
     }
+  }
 
-    &:hover {
-        transform-origin: center;
-    }
+  &:hover {
+    transform-origin: center;
+  }
 }
-.header__nav{
-    ul{
-        display: flex;
-        margin-left: 205px;
-        gap: 30px;
-    }
-    a {
-        font-family: Montserrat;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 13px;
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 0;
-            height: 3px;
-            background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
-            border-radius: 10px;
-            transition: width 0.15s ease-in-out;
-        }
-
-        &:hover::after {
-            width: 100%;
-        }
-    }
-}
-.header__buttons{
+.header__nav {
+  ul {
     display: flex;
-    gap: 38px;
-    margin-left: 140px;
+    margin-left: 205px;
+    gap: 30px;
+  }
+  a {
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(269deg, #c0b7e8 -3.72%, #8176af 82.17%);
+      border-radius: 10px;
+      transition: width 0.15s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
-.svg-Frame-dims{
-    animation: rotateOnce 6.4s ease forwards;
+.header__buttons {
+  display: flex;
+  gap: 38px;
+  margin-left: 140px;
 }
-.svg-header-title-dims{
-    margin-left: 15px;
+.svg-Frame-dims {
+  animation: rotateOnce 6.4s ease forwards;
+}
+.svg-header-title-dims {
+  margin-left: 15px;
 }
 
 @keyframes rotateOnce {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }

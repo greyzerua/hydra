@@ -65,6 +65,7 @@ function sprite() {
 
 function scripts() {
     return src([
+        'node_modules/swiper/swiper-bundle.js',
         'app/js/*.js',
         '!app/js/main.min.js',
     ])
@@ -91,7 +92,7 @@ function watching() {
     });
     watch(['app/scss/**/*.scss'], styles)
     watch(['app/images/src'], images)
-    watch(['app/js/main.js'], scripts)
+    watch(['app/js/*.js','!app/js/main.min.js',], scripts)
     watch(['app/components/*', 'app/pages/*'], pages)
     watch(['app/*.html']).on('change', browserSync.reload);
 }
