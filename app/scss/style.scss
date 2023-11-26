@@ -4,6 +4,7 @@
 @import "./blocks/_main.scss";
 @import "./blocks/_description.scss";
 @import "./blocks/_introduction.scss";
+@import "./blocks/_about-us.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import "node_modules/swiper/swiper-bundle";
 @import "_slider.scss";
@@ -16,13 +17,23 @@ body {
   color: #fff;
   line-height: normal;
 }
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 36px;
   font-weight: 700;
 }
+
 h4 {
   font-size: 36px;
   font-weight: 300;
+}
+h5 {
+  font-size: 24px;
+  font-weight: 700;
 }
 p {
   font-weight: 400;
@@ -36,7 +47,5 @@ a {
   flex-direction: column;
   margin: 0 auto;
   max-width: 1298px;
-}
-main {
   padding: 0 15px;
 }

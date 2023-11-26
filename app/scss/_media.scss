@@ -1,3 +1,19 @@
+@media (max-width: 1300px) {
+  .about-us {
+    &__items {
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      row-gap: 20px;
+      justify-items: center;
+      margin: 0 auto;
+    }
+    &__card {
+      width: 310px;
+    }
+  }
+}
 @media (max-width: 1320px) {
   .header {
     justify-content: space-between;
@@ -66,6 +82,12 @@
     max-width: 80%;
   }
 }
+@media (max-width: 1150px) {
+  //Block №2
+  .description__wrapper p {
+    max-width: 535px;
+  }
+}
 @media (max-width: 994px) {
   .main-section {
     background-image: url(/images/background-main-mobile.png);
@@ -103,6 +125,39 @@
   }
   .desktop-info {
     max-width: 100%;
+  }
+  //Block №2
+  .description {
+    &__subtitle {
+      img {
+        display: none;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        display: none;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .introduction {
+    &__img {
+      width: 90%;
+      img {
+        width: 100%;
+      }
+    }
+    &__content {
+      padding-top: 50px;
+    }
   }
 }
 @media (max-width: 806px) {
@@ -147,6 +202,48 @@
       max-height: 388px;
     }
   }
+  //Block №2
+  .introduction {
+    padding-top: 54px;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: none;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__img {
+      width: 70%;
+      padding-right: 0px;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3, h4 {
+        display: none;
+      }
+      p {
+       font-size: 15px;
+      }
+    }
+  }
+  //Block №3
+  .about-us {
+    padding-top: 65px;
+    &__items {
+      display: none;
+    }
+  }
+  .mobile-about-us {
+    padding: 15px;
+    &__slider{
+      padding-top: 60px;
+      display: flex;
+    }
+  }
 }
 @media (max-width: 570px) {
   .content__title {
@@ -173,6 +270,17 @@
   .svg-arrow-left-dims {
     width: 26px;
   }
+  //Block №2
+  .introduction {
+    &__img {
+      width: 83%;
+    }
+    &__text {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
 }
 @media (max-width: 435px) {
   .main-section {
@@ -198,6 +306,18 @@
     }
     span {
       font-size: 24px;
+    }
+  }
+  //Block №2
+  .introduction {
+    &__img {
+      width: 100%;
+    }
+  }
+  //Block №3
+  .mobile-about-us {
+    &__slider {
+      width: 85%;
     }
   }
 }
