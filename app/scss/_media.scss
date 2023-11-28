@@ -13,6 +13,9 @@
       width: 310px;
     }
   }
+  .about-us-technologies {
+    background-position: center top 90%;
+  }
 }
 @media (max-width: 1320px) {
   .header {
@@ -244,6 +247,17 @@
       display: flex;
     }
   }
+  //Block№4
+  .technologies {
+    &__content {
+      height: 222px;
+    }
+    &__content-text {
+      h3, h4 {
+        font-size: 27px;
+      }
+    }
+  }
 }
 @media (max-width: 570px) {
   .content__title {
@@ -278,6 +292,22 @@
     &__text {
       p {
         font-size: 13px;
+      }
+    }
+  }
+  //Block№4
+  .technologies {
+    &__content {
+      height: 180px;
+    }
+    &__content-text {
+      h3, h4 {
+        font-size: 21px;
+      }
+    }
+    &__content-wrap {
+      .arrow-bottom {
+        width: 80px;
       }
     }
   }
@@ -318,6 +348,22 @@
   .mobile-about-us {
     &__slider {
       width: 85%;
+    }
+  }
+  //Block№4
+  .technologies {
+    &__content {
+      height: 110px;
+    }
+    &__content-text {
+      h3, h4 {
+        font-size: 14px;
+      }
+    }
+    &__content-wrap {
+      .arrow-bottom {
+        width: 60px;
+      }
     }
   }
 }
