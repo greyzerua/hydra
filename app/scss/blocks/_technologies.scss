@@ -1,10 +1,21 @@
 .about-us-technologies {
-  background-image: url(/images/background-services.png);
+  background-image: url(../images/background-services.png);
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 .technologies {
   padding-top: 114px;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 174px;
+    img {
+      height: 100%;
+    }
+  }
   &__content-wrap {
     position: relative;
     .arrow-bottom {
@@ -14,7 +25,7 @@
       transform: translateX(-50%) translateY(50%) scale(0.8);
       bottom: 0;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         transform: translateX(-50%) translateY(50%) scale(0.9);
       }
     }

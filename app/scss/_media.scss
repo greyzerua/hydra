@@ -93,7 +93,7 @@
 }
 @media (max-width: 994px) {
   .main-section {
-    background-image: url(/images/background-main-mobile.png);
+    background-image: url(../images/background-main-mobile.png);
     background-position: center -100%;
   }
   .hero-section {
@@ -353,11 +353,11 @@
   //Block№4
   .technologies {
     &__content {
-      height: 110px;
+      height: 170px;
     }
     &__content-text {
       h3, h4 {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
     &__content-wrap {
