@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //Scroll to section
 document.addEventListener("DOMContentLoaded", function () {
   const scrollLinks = document.querySelectorAll(".nav-link");
-
   scrollLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
       closeBurgerMenu();
@@ -37,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
