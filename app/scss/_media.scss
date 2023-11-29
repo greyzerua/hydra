@@ -249,13 +249,31 @@
   }
   //Block№4
   .technologies {
+    padding-top: 70px;
     &__content {
       height: 222px;
+    }
+    &__content-wrap {
+      a {
+        display: none;
+      }
     }
     &__content-text {
       h3, h4 {
         font-size: 27px;
       }
+    }
+    &__slider {
+      display: flex;
+    }
+    &__items {
+      display: none;
+    }
+  }
+  .technologies__button-next,.technologies__button-prev {
+    width: 50%;
+    img {
+      width: 65px;
     }
   }
 }
@@ -308,6 +326,19 @@
     &__content-wrap {
       .arrow-bottom {
         width: 80px;
+      }
+    }
+    &__slider {
+      width: 90%;
+    }
+  }
+  .technologies-slide {
+    padding: 0px 5px;
+    &__img {
+      width: 70%;
+      img {
+        width: 100%;
+        height: 160px;
       }
     }
   }
@@ -363,6 +394,19 @@
     &__content-wrap {
       .arrow-bottom {
         width: 60px;
+      }
+    }
+    &__slider {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
+  .technologies-slide {
+    &__img {
+      width: 96%;
+      img {
+        width: 100%;
+        height: 140px;
       }
     }
   }
