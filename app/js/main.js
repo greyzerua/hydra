@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//Scroll to section
+// Click.Scroll to section
 document.addEventListener("DOMContentLoaded", function () {
   const scrollLinks = document.querySelectorAll(".nav-link");
   scrollLinks.forEach(function (link) {
@@ -36,4 +36,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-

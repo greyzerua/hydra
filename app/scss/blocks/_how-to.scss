@@ -1,0 +1,63 @@
+.how-to {
+  padding-top: 123px;
+  &__build-circle__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+  }
+  &__build-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(251deg, #c0b7e8 12.87%, #8176af 89.33%);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  &__build-circle__text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 14px;
+    max-width: 67%;
+    margin-top: 25px;
+  }
+  &__build {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 119px;
+    position: relative;
+  }
+  .border {
+    border-radius: 50%;
+    border: 20px solid rgba(13, 13, 13, 0.32);
+    width: 198px;
+    height: 198px;
+  }
+}
+.svg-how-to {
+  position: absolute;
+  width: 79%;
+  top: -12px;
+  right: 66px;
+  path {
+        stroke-dasharray: 1670;
+        stroke-dashoffset: 1670;
+        opacity: 0;
+        stroke-width: 10;
+  }
+}
+
+  .svg-visible .svg-how-to path {
+    animation: dash 5s ease forwards;
+    opacity: 1;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

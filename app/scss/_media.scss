@@ -151,6 +151,7 @@
       justify-content: center;
     }
   }
+
   .introduction {
     &__img {
       width: 90%;
@@ -160,6 +161,39 @@
     }
     &__content {
       padding-top: 50px;
+    }
+  }
+  //Block HOW-To
+  .how-to {
+    &__build {
+      gap: 20px;
+    }
+    &__build-circle__text {
+      max-width: 100%;
+      h2 {
+        font-size: 19px;
+      }
+    }
+    &__build-circle__wrap {
+      width: 100%;
+    }
+    .border {
+      border: 14px solid rgba(13, 13, 13, 0.32);
+      width: 17vw;
+      height: 17vw;
+    }
+    &__build-circle {
+      h6 {
+        font-size: 50px;
+      }
+    }
+  }
+  .svg-how-to {
+    width: 100%;
+    top: 0;
+    right: 0;
+    path {
+      stroke-width: 9;
     }
   }
 }
@@ -226,11 +260,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      h3, h4 {
+      h3,
+      h4 {
         display: none;
       }
       p {
-       font-size: 15px;
+        font-size: 15px;
       }
     }
   }
@@ -243,7 +278,7 @@
   }
   .mobile-about-us {
     padding: 15px;
-    &__slider{
+    &__slider {
       padding-top: 60px;
       display: flex;
     }
@@ -260,7 +295,8 @@
       }
     }
     &__content-text {
-      h3, h4 {
+      h3,
+      h4 {
         font-size: 27px;
       }
     }
@@ -271,10 +307,49 @@
       display: none;
     }
   }
-  .technologies__button-next,.technologies__button-prev {
+  .technologies__button-next,
+  .technologies__button-prev {
     width: 50%;
     img {
       width: 65px;
+    }
+  }
+  //Block how-to
+  .how-to {
+    &__build-circle__text {
+      h2 {
+        font-size: 17px;
+      }
+    }
+    .border {
+      width: 16vw;
+      height: 16vw;
+    }
+    &__build-circle {
+      h6 {
+        font-size: 40px;
+      }
+    }
+  }
+  .svg-how-to {
+    top: -26px;
+  }
+}
+@media (max-width: 730px) {
+  .how-to {
+    &__build {
+      display: none;
+    }
+  }
+  .how-to__slider {
+    display: flex;
+    .border {
+      width: 26vw;
+      height: 26vw;
+    }
+    .how-to__build-circle__text h2 {
+      text-align: center;
+      font-size: 24px;
     }
   }
 }
@@ -316,7 +391,8 @@
       height: 180px;
     }
     &__content-text {
-      h3, h4 {
+      h3,
+      h4 {
         font-size: 21px;
       }
     }
@@ -339,8 +415,26 @@
       }
     }
   }
+  //block how-to slider
+  .how-to__slider {
+    width: 100%;
+    .border {
+      width: 33vw;
+      height: 33vw;
+    }
+  }
+  
+
 }
 @media (max-width: 435px) {
+  .description {
+  &__content h3 {
+    font-size: 25px;
+  }
+  &__subtitle  h4{
+    font-size: 25px;
+  }
+  }
   .main-section {
     background-position: center 433%;
   }
@@ -380,8 +474,9 @@
       height: 170px;
     }
     &__content-text {
-      h3, h4 {
-        font-size: 16px;
+      h3,
+      h4 {
+        font-size: 20px;
       }
     }
     &__content-wrap {
@@ -403,4 +498,17 @@
       }
     }
   }
+  //block how-to slider
+  .how-to__slider {
+    .border {
+      width: 34vw;
+      height: 34vw;
+    }
+    .how-to__build-circle__text h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
 }
+
+
