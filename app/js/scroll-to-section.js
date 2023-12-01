@@ -1,3 +1,4 @@
+
 const scrollToSectionByLink = (event) => {
   event.preventDefault();
 
@@ -15,15 +16,18 @@ const scrollToSectionByLink = (event) => {
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
-      change.target.classList.add('svg-visible');
+      change.target.classList.add('element-show');
+      change.target.classList.add('element-hide');
     } else {
-      change.target.classList.remove('svg-visible');
+      change.target.classList.remove('element-show');
     }
   });
 }
+
 let options = { threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.how-to');
+let elements = document.querySelectorAll('.how-to__build, .description__wrapper, .about-us__items');
+
 for (let elm of elements) {
   observer.observe(elm);
 }

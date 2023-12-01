@@ -9,21 +9,7 @@
   justify-content: center;
   align-items: center;
 }
-.logo__rotate {
-  &:hover {
-    animation: rotateAnimation 0.3s linear forwards infinite;
-  }
 
-  @keyframes rotateAnimation {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  &:hover {
-    transform-origin: center;
-  }
-}
 .header__nav {
   ul {
     display: flex;
@@ -60,15 +46,7 @@
   display: flex;
   gap: 38px;
 }
-.svg-Frame-dims {
-  animation: rotateOnce 6.4s ease forwards;
-}
+
 .svg-header-title-dims {
   margin-left: 15px;
-}
-
-@keyframes rotateOnce {
-  to {
-    transform: rotate(360deg);
-  }
 }

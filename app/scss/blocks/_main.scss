@@ -2,9 +2,22 @@
   overflow: hidden;
 }
 .main-section {
-  background-image: url("../images/background-main.png");
+  position: relative;
+  overflow: hidden;
+}
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/background-main.png);
   background-repeat: no-repeat;
   background-position: calc((100vw - 1278px) / 2 - 63px);
+  opacity: 0;
+  z-index: -1; 
+  animation: fadeIn 1.5s forwards 1.6s; 
 }
 .hero-section {
   padding-top: 146px;

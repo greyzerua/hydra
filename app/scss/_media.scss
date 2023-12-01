@@ -21,7 +21,9 @@
   .header {
     justify-content: space-between;
   }
-  .main-section {
+
+  .main-section::before {
+    content: "";
     background-position: calc((100vw - 1278px) / 2 - 110px);
   }
   .header__nav ul {
@@ -78,7 +80,9 @@
     max-width: 436px;
     max-height: 424px;
   }
-  .main-section {
+  
+  .main-section::before {
+    content: "";
     background-position: calc((100vw - 1278px) / 2 - 145px);
   }
   .content__title {
@@ -92,7 +96,8 @@
   }
 }
 @media (max-width: 994px) {
-  .main-section {
+  .main-section::before {
+    content: "";
     background-image: url(../images/background-main-mobile.png);
     background-position: center -100%;
   }
@@ -435,7 +440,8 @@
     font-size: 25px;
   }
   }
-  .main-section {
+  .main-section::before {
+    content: "";
     background-position: center 433%;
   }
   .hero-section {

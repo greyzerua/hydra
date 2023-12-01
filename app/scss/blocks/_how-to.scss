@@ -50,14 +50,3 @@
         stroke-width: 10;
   }
 }
-
-  .svg-visible .svg-how-to path {
-    animation: dash 5s ease forwards;
-    opacity: 1;
-  }
-
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
