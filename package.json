@@ -2,7 +2,7 @@
   "name": "gulp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +24,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.66.1",
-    "swiper": "^11.0.4"
+    "sass": "^1.69.5",
+    "swiper": "^11.0.4",
+    "tslib": "^2.6.2"
   }
 }

@@ -136,7 +136,7 @@
   ///////////////////////////////////////////////////////////////////////
   .introduction__img {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-30px);
   }
   .introduction__text {
     opacity: 0;
@@ -151,7 +151,14 @@
   .element-show.introduction__content::before {
     animation: fadeInOpacity 1.5s forwards 0.8s;
   }
-
+  ////////////////////////////////////////////////////////
+  .technologies__content-text {
+    opacity: 0;
+    transform: translateY(55px);
+  }
+  .element-show .technologies__content-text {
+    animation: fadeIn 1.7s forwards 0.6s;
+  }
   @keyframes text-focus-in {
     0% {
       -webkit-filter: blur(12px);

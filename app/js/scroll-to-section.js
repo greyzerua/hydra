@@ -25,7 +25,10 @@ const elementsConfig = [
   },
   {
     elementSelector: '.introduction__content'
-  }
+  },
+  {
+    elementSelector: '.technologies__content-wrap'
+  },
 ]
 
 

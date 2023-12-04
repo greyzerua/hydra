@@ -1,3 +1,4 @@
+
 //Cards transform cursor
 document.addEventListener("DOMContentLoaded", function () {
   const card = document.querySelectorAll(".about-us__card");
