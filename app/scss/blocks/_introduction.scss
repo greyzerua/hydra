@@ -1,15 +1,29 @@
 .introduction {
     padding-top: 88px;
     &__wrapper {
-        background-image: url("../images/backgroung-about.png");
-        background-position: center;
-        background-repeat: no-repeat;
+       position: relative;
+       overflow: hidden;
+
     }
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 100px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            background-image: url("../images/backgroung-about.png");
+            background-position: center;
+            background-repeat: no-repeat;
+          
+            z-index: -1; 
+          }
     }
     &__text {
         p{

@@ -255,6 +255,9 @@
       background-image: none;
     }
     &__content {
+      &::before {
+        position: unset;
+      }
       flex-direction: column;
     }
     &__img {
