@@ -29,6 +29,9 @@ const elementsConfig = [
   {
     elementSelector: '.technologies__content-wrap'
   },
+  {
+    elementSelector: '.technologies__items'
+  },
 ]
 
 

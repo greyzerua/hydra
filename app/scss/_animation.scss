@@ -5,11 +5,26 @@
   }
   .svg-header-title-dims {
     opacity: 0;
+    animation: fadeIn 0.7s forwards 0.8s;
   }
   .svg-Frame-dims {
     opacity: 0;
-    animation: fadeIn 0.7s forwards 0.8s;
+    animation: combinedAnimation 6s forwards 0.8s;
   }
+  @keyframes combinedAnimation {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(1440deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(1440deg);
+    }
+}
 
   .svg-header-title-dims {
     animation: fadeIn 0.7s forwards 1s;
@@ -53,15 +68,15 @@
   ////////////////////////////////////////////////////////////////
   .hero-content {
     opacity: 0;
-    animation: text-focus-in 1.5s forwards 0.5s;
+    animation: text-focus-in 2s forwards 0.7s;
   }
   .hero-section__img {
     opacity: 0;
-    animation: text-focus-in 1.5s forwards 0.5s;
+    animation: text-focus-in 2s forwards 0.7s;
   }
   .desktop-info {
     opacity: 0;
-    animation: text-focus-in 1.5s forwards 0.5s;
+    animation: text-focus-in 2s forwards 0.7s;
   }
 
   //////////////////////////////////////////
@@ -152,13 +167,14 @@
     animation: fadeInOpacity 1.5s forwards 0.8s;
   }
   ////////////////////////////////////////////////////////
-  .technologies__content-text {
+  .technologies__content-text, .technologies__items {
     opacity: 0;
     transform: translateY(55px);
   }
-  .element-show .technologies__content-text {
-    animation: fadeIn 1.7s forwards 0.6s;
+  .element-show .technologies__content-text, .element-show.technologies__items {
+    animation: fadeIn 1.7s forwards 0.4s;
   }
+
   @keyframes text-focus-in {
     0% {
       -webkit-filter: blur(12px);

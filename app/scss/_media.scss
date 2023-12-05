@@ -165,7 +165,7 @@
       }
     }
     &__content {
-      padding-top: 50px;
+      margin-top: 50px;
     }
   }
   //Block HOW-To
@@ -199,6 +199,13 @@
     right: 0;
     path {
       stroke-width: 9;
+    }
+  }
+  //Block Join
+  .join {
+    &__wrapper {
+      padding: 0px 30px;
+      border-radius: 40px;
     }
   }
 }
@@ -360,6 +367,12 @@
       font-size: 24px;
     }
   }
+  //Block Join
+  .join {
+    &__wrapper {
+      padding: 0px 10px;
+    }
+  }
 }
 @media (max-width: 570px) {
   .content__title {
@@ -431,7 +444,38 @@
       height: 33vw;
     }
   }
-  
+  //Block Join
+  .join {
+    &__form {
+      gap: 20px;
+      &__inputs-name, &__inputs-contacts {
+        flex-direction: column;
+        margin: 0 auto 0px;
+        gap: 22px;
+      }
+      input {
+        height: 53px;
+        &::placeholder {
+          font-size: 13px;
+        }
+      }
+      textarea {
+        margin-top: 0px;
+      }
+      button {
+        margin-top: 41px;
+        min-width: 65%;
+      }
+    }
+    &__text {
+      h3, h4 {
+        font-size: 26px;
+      }
+    }
+    .svg-line-join {
+      width: 90%;
+    }
+  }
 
 }
 @media (max-width: 435px) {
@@ -518,6 +562,8 @@
       font-size: 24px;
     }
   }
+   //Block Join
+
 }
 
 
