@@ -1,3 +1,8 @@
+@media (max-width: 729px) {
+  .main-section::before {
+    opacity: 1;
+  }
+}
 @media (min-width: 729px) {
   .header {
     opacity: 0;
@@ -81,7 +86,7 @@
 
   //////////////////////////////////////////
   .element-show .svg-how-to path {
-    animation: dash 5s ease forwards;
+    animation: dash 5s ease forwards 0.5s;
     opacity: 1;
   }
 

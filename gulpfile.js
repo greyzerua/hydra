@@ -51,7 +51,9 @@ function images() {
 }
 
 function sprite() {
-    return src('app/images/*.svg')
+    return src('app/images/**/*.svg',
+               '!app/images/**/*.html',
+    )
         .pipe(svgSprite({
             mode: {
                 stack: {

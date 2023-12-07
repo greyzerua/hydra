@@ -62,7 +62,11 @@
       }
 
       &::-webkit-scrollbar-thumb {
-        background: radial-gradient(50% 50% at 50% 50%, #706a8b 0%, #443e5c 100%);
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #706a8b 0%,
+          #443e5c 100%
+        );
         border-radius: 6px;
       }
 
@@ -76,7 +80,7 @@
       }
     }
     button {
-        margin-top: 51px;
+      margin-top: 51px;
     }
   }
 }
