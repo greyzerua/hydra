@@ -32,6 +32,15 @@ const elementsConfig = [
   {
     elementSelector: '.technologies__items'
   },
+  {
+    elementSelector: '.join__wrapper'
+  },
+  {
+    elementSelector: '.footer'
+  },
+  {
+    elementSelector: '.footer__wrapper'
+  },
 ]
 
 

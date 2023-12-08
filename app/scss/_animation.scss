@@ -179,7 +179,28 @@
   .element-show .technologies__content-text, .element-show.technologies__items {
     animation: fadeIn 1.7s forwards 0.4s;
   }
-
+  /////////////////////////////////////////////
+  .join__wrapper {
+    opacity: 0;
+  }
+  .element-show.join__wrapper {
+    animation: fadeInOpacity 1s forwards 0.3s;
+  }
+/////////////////////////////////////////////
+  .footer__wrapper {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  .footer__wrapper.element-show {
+    animation: fadeIn 1.4s forwards 0.3s;
+  }
+  .footer::before {
+    opacity: 0;
+  }
+  .element-show.footer::before{
+    animation: fadeInOpacity 2s forwards 0.7s;
+  }
+  
   @keyframes text-focus-in {
     0% {
       -webkit-filter: blur(12px);
